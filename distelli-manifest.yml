@@ -1,4 +1,4 @@
-<username>/NodeUbuntuPSimpleApp
+<username>/NodeUbuntuSimpleApp:
   # This Basic Distelli Manifest assumes the following
   # has been provisioned on the destination deploy server:
   #
@@ -13,10 +13,9 @@
   PkgExclude:
     - node_modules/
   PreInstall:
-    - echo "PreInstall Starting."
-    - sudo apt-get update
     - sudo apt-get install nodejs -y
     - sudo apt-get install npm -y
+    - echo "PreInstall Starting."
   PostInstall:
     - echo "PostInstall Starting."
     # - npm install
