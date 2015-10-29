@@ -5,7 +5,7 @@
   PkgInclude:
     - server.js
     - node_modules/*
-  Build
+  Build:
     - npm install
     - npm test
   PreInstall:
